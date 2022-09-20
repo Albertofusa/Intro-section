@@ -27,8 +27,13 @@ body {
 .container {
   height: 100vh;
   width: 100%;
-  padding: 40px;
+}
+
+.navbar {
   display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  width: 100%;
 }
 
 .card-description {
@@ -36,30 +41,36 @@ body {
   width: 50%;
 }
 
-.logo {
+.links {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.links-user {
   display: flex;
   align-items: center;
+  justify-content: flex-end;
   gap: 40px;
-  margin-bottom: 100px;
 }
 
 .section-logo {
   height: 30px;
 }
 
-.section-logo-description {
-  font-size: 14px;
-  color: var(--color-iconos);
-  cursor: pointer;
-}
-
-.section-logo-description-1 {
+.link {
+  text-decoration: none;
   font-size: 14px;
   color: var(--color-iconos);
 }
 
-.card-description-center {
-  margin-left: 100px;
+.main-content {
+  display: flex;
+  width: 90%;
+  gap: 100px;
+  padding: 60px 100px;
+  margin: auto;
 }
 
 .card-description-center-title {
@@ -103,16 +114,8 @@ body {
 }
 
 .card-imagen {
-  height: 100%;
+  height: 600px;
   width: 50%;
-}
-
-.login-button-img {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 40px;
-  margin-bottom: 30px;
 }
 
 .login {
@@ -141,7 +144,7 @@ body {
 }
 
 .imagen-main {
-  margin-left: 100px;
-  height: 600px;
-  width: 450px;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
 }
